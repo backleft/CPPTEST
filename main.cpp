@@ -7,18 +7,27 @@ using namespace std;
 
 class TEST() {
 public:
-	float add(float x, float y){
+	float add(float x, float y)
+	{
 		return x + y;
 	}
-	float sub(float x, float y){
+	float sub(float x, float y)
+	{
 		return x - y;
 	}
-	float mul(float x, float y){
+	float mul(float x, float y)
+	{
 		return x * y;
 	}
-	float divi(float x, float y){
+	float divi(float x, float y)
+	{
 		return x % y;
 	}
+	float squared(float Chris)
+	{
+		return Chris * Chris
+	}
+
 }
 
 int main()
@@ -37,7 +46,8 @@ int main()
 	cin >> y;
 	cout << endl;
 
-	switch(operation){
+	switch(operation)
+	{
 		case '+':
 			T.add(x,y);
 			break;
