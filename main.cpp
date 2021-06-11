@@ -5,7 +5,7 @@
 using namespace std;
 
 
-class TEST() {
+class TEST {
 public:
 	float add(float x, float y)
 	{
@@ -21,51 +21,51 @@ public:
 	}
 	float divi(float x, float y)
 	{
-		return x % y;
+		return x / y;
 	}
 	float squared(float Chris)
 	{
-		return Chris * Chris
+		return Chris * Chris;
 	}
 
-}
+};
 
 int main()
 {
 	float x = 0.0;
 	float y = 0.0;
-	char operation = '';
+	char operation;
 	TEST T;
 	cout << "Enter an operation: ";
 	cin >> operation;
 	cout << endl;
-	cout << "Enter first number";
+	cout << "Enter first number: ";
 	cin >> x;
 	cout << endl;
-	cout << "Enter second number";
+	cout << "Enter second number: ";
 	cin >> y;
 	cout << endl;
 
 	switch(operation)
 	{
 		case '+':
-			T.add(x,y);
+			cout << T.add(x,y) << endl;
 			break;
 		case '-':
-			T.sub(x,y);
+			cout << T.sub(x,y) << endl;
 			break;
 		case '*':
-			T.mul(x,y);
+			cout << T.mul(x,y) << endl;
 			break;
 		case '/':
-			T.divi(x,y);
+			cout << T.divi(x,y) << endl;
 			break;
 		default:
 			break;
 	}
 
 	return 0;
-}
+
 
 
 }
